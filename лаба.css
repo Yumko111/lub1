@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2f0f0f;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+main {
+    padding: 20px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 фото в ряд */
+    gap: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+     
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Анімація при наведенні */
+.gallery-item:hover {
+    transform: scale(1.05); /* Збільшення */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 фото в ряд */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 фото в ряд */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 фото в ряд */
+    }
+}
+
+
+footer {
+    background-color: #2f0f0f;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
