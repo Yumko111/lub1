@@ -21,7 +21,7 @@ main {
     padding: 20px;
 }
 
-.container {
+.container p {
     width: 90%;
     max-width: 1200px;
     margin: 10px auto;
