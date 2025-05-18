@@ -82,3 +82,26 @@ footer {
     margin-top: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
+@media print {
+  header, nav, footer {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-family: Times New Roman, serif;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
